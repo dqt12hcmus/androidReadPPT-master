@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="30dp"
+            android:paddingTop="170dp"
+            android:text="TextView"
+            tools:rotation="90" />
+
+        <com.poi.poiandroid.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="260dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtNote"
+            android:layout_width="189dp"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:rotation="90"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@android:color/transparent" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+        android:id="@+id/btnBrowser"
+        android:layout_width="70dp"
+        android:layout_height="98dp"
+        android:background="@android:color/holo_red_dark"
+        android:src="@drawable/ic_return" />
+
+    <TextView
+        android:id="@+id/txtFilename"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.94"
+        android:background="@android:color/holo_red_dark"
+        android:paddingTop="25dp"
+        android:text="Open"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/btnPresenter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:autoText="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="Presenter Mode" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSlides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
